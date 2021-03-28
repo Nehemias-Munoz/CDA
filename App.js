@@ -2,6 +2,7 @@ import 'react-native-gesture-handler';
 import React from 'react';
 //Vistas
 import Login from './app/screens/views/Login';
+import Register from './app/screens/views/Register';
 //Navegacion
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -13,6 +14,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator initialRouteName={'Activities'} screenOptions={style.headerVisible}>
         <Stack.Screen name={'Login'} component={Login} options={style.headerHidden} />
+        <Stack.Screen name={'Register'} component={Register} options={{ title: 'Registro' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
