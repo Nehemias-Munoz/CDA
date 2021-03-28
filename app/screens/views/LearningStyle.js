@@ -12,7 +12,7 @@ const LearningStyle = () => {
   //#region DEFINICION STATES Y VARIABLES
   const navigation = useNavigation();
 
-  const [learnings, setLearnings] = useState([
+  const [learnings] = useState([
     { id: 1, name: 'Kinetica', icon: 'child', backgroundColor: '#754d24' },
     { id: 2, name: 'Auditivo', icon: 'music', backgroundColor: '#0070bd' },
     { id: 3, name: 'Visual', icon: 'tablet', backgroundColor: '#c2262e' },
