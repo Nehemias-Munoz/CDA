@@ -4,6 +4,7 @@ import React from 'react';
 import Login from './app/screens/views/Login';
 import Register from './app/screens/views/Register';
 import Assignatures from './app/screens/views/Assignatures';
+import LearningStyle from './app/screens/views/LearningStyle';
 //Navegacion
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -17,6 +18,7 @@ const App = () => {
         <Stack.Screen name={'Login'} component={Login} options={style.headerHidden} />
         <Stack.Screen name={'Register'} component={Register} options={{ title: 'Registro' }} />
         <Stack.Screen name={'Assignatures'} component={Assignatures} options={{ title: 'Asignaturas' }} />
+        <Stack.Screen name={'LearningStyle'} component={LearningStyle} options={{ title: 'Tipos de Aprendizaje' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
