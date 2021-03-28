@@ -15,7 +15,7 @@ const ActingGameAct = () => {
     type: 'Video',
     description:
       'Crea un video de un minuto, donde tu y tus amigos representen el siguiente concepto:',
-    concept: 'Planeta',
+    concept: 'Celula',
     instruction:
       'Grabe un video, suba a Youtube y comparta el link del video, ejemplo: https://youtu.be/ejemplo.',
   });
@@ -31,7 +31,7 @@ const ActingGameAct = () => {
               setTypeSubmit={setTypeSubmit} />
             <Card.Image
               style={styles.imageStyle}
-              source={require('../../../images/activities/shortfilms.jpg')}
+              source={require('../../../assets/images/activities/shortfilms.jpg')}
             />
             <View style={styles.activityContent}>
               <Text style={styles.infoTitle}>Descripcion:</Text>
@@ -43,7 +43,7 @@ const ActingGameAct = () => {
                   containerStyle={styles.imageConceptContainer}
                   PlaceholderContent={<ActivityIndicator />}
                   style={styles.imageConceptStyle}
-                  source={require('../../../images/activities/actinggame/planet.png')}
+                  source={require('../../../assets/images/activities/actinggame/cells.png')}
                 />
               </View>
               <Text style={styles.infoTitle}>Instruciones:</Text>
