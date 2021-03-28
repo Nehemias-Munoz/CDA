@@ -3,6 +3,7 @@ import React from 'react';
 //Vistas
 import Login from './app/screens/views/Login';
 import Register from './app/screens/views/Register';
+import Assignatures from './app/screens/views/Assignatures';
 //Navegacion
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -15,6 +16,7 @@ const App = () => {
       <Stack.Navigator initialRouteName={'Activities'} screenOptions={style.headerVisible}>
         <Stack.Screen name={'Login'} component={Login} options={style.headerHidden} />
         <Stack.Screen name={'Register'} component={Register} options={{ title: 'Registro' }} />
+        <Stack.Screen name={'Assignatures'} component={Assignatures} options={{ title: 'Asignaturas' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
