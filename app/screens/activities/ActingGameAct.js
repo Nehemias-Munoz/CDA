@@ -4,6 +4,7 @@ import { Card } from 'react-native-elements';
 //Componentes
 import EvidenceTypeBar from '../components/EvidenceTypeBar';
 import SubmitComponent from '../components/SubmitComponent';
+import MyListComponent from '../components/MyListComponent';
 
 const ActingGameAct = () => {
   //Tipo de componente submit
@@ -52,6 +53,7 @@ const ActingGameAct = () => {
                 <Text style={styles.infoDesc}>{activity.instruction}</Text>
               </View>
               {typeSubmit ? <SubmitComponent typeSubmit={typeSubmit} /> : null}
+              <MyListComponent />
             </ScrollView>
           </Card>
         </ScrollView>
