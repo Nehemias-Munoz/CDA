@@ -20,8 +20,29 @@ const App = () => {
       <Stack.Navigator initialRouteName={'Login'} screenOptions={style.headerVisible}>
         <Stack.Screen name={'Login'} component={Login} options={style.headerHidden} />
         <Stack.Screen name={'Register'} component={Register} options={{ title: 'Registro' }} />
-        <Stack.Screen name={'Assignatures'} component={Assignatures} options={{ title: 'Asignaturas' }} />
-        <Stack.Screen name={'LearningStyle'} component={LearningStyle} options={{ title: 'Tipos de Aprendizaje' }} />
+        <Stack.Screen
+          name={'Assignatures'}
+          component={Assignatures}
+          options={{
+            title: 'Asignaturas',
+            headerRight: () => (
+              <TouchableOpacity style={style.iconMenu}>
+                <Icon name="menu" type="material-community" size={34} />
+              </TouchableOpacity>
+            ),
+          }} />
+        <Stack.Screen
+          name={'LearningStyle'}
+          component={LearningStyle}
+          options={{
+            title: 'Tipos de Aprendizaje',
+            headerRight: () => (
+              <TouchableOpacity style={style.iconMenu}>
+                <Icon name="menu" type="material-community" size={34} />
+              </TouchableOpacity>
+            ),
+          }}
+        />
         <Stack.Screen
           name={'Activities'}
           component={Activities}
