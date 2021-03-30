@@ -5,6 +5,7 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import ActingGameAct from '../activities/ActingGameAct';
 import DebateAct from '../activities/DebateAct';
 import ExperimentAct from '../activities/ExperimentAct';
+import ImReporter from '../activities/ImReporter';
 //Navegacion
 const Tab = createMaterialTopTabNavigator();
 
@@ -15,6 +16,7 @@ const Activities = () => {
         <Tab.Screen name={'ActingGameAct'} component={ActingGameAct} />
         <Tab.Screen name={'DebateAct'} component={DebateAct} />
         <Tab.Screen name={'ExperimentAct'} component={ExperimentAct} />
+        <Tab.Screen name={'ImReporter'} component={ImReporter} />
       </Tab.Navigator>
     </SafeAreaProvider>
   );
