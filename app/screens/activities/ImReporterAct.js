@@ -7,7 +7,7 @@ import EvidenceTypeBar from '../components/EvidenceTypeBar';
 import SubmitComponent from '../components/SubmitComponent';
 import MyListComponent from '../components/MyListComponent';
 
-const ImReporter = () => {
+const ImReporterAct = () => {
   //Tipo de componente submit
   const [typeSubmit, setTypeSubmit] = useState();
   //Datos Actividad
@@ -104,4 +104,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ImReporter;
+export default ImReporterAct;
