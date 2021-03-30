@@ -3,6 +3,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 //Vista de Actividades
 import ActingGameAct from '../activities/ActingGameAct';
+import DebateAct from '../activities/DebateAct';
 //Navegacion
 const Tab = createMaterialTopTabNavigator();
 
@@ -11,6 +12,7 @@ const Activities = () => {
     <SafeAreaProvider>
       <Tab.Navigator tabBarOptions={styleTabBar.tabBar}>
         <Tab.Screen name={'ActingGameAct'} component={ActingGameAct} />
+        <Tab.Screen name={'DebateAct'} component={DebateAct} />
       </Tab.Navigator>
     </SafeAreaProvider>
   );
