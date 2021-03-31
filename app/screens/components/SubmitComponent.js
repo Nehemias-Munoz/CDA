@@ -85,7 +85,7 @@ const SubmitComponent = ({ typeSubmit }) => {
     <View>
       {typeSubmit === 'Link' ? <Video /> : null}
       {typeSubmit === 'Audio' ? <ButtonResource typeResource={'Audio'} /> : null}
-      {typeSubmit === 'Text' ? <ButtonResource typeResource={'Document'} /> : null}
+      {typeSubmit === 'Document' ? <ButtonResource typeResource={'Document'} /> : null}
       {typeSubmit === 'Image' ? <ButtonResource typeResource={'Image'} /> : null}
     </View>
   );
