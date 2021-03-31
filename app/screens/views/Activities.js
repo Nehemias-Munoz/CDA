@@ -7,6 +7,7 @@ import DebateAct from '../activities/DebateAct';
 import ExperimentAct from '../activities/ExperimentAct';
 import ImReporterAct from '../activities/ImReporterAct';
 import IllustrationAct from '../activities/IllustrationAct';
+import InvestigationAct from '../activities/InvestigationAct';
 //Navegacion
 const Tab = createMaterialTopTabNavigator();
 
@@ -19,6 +20,7 @@ const Activities = () => {
         <Tab.Screen name={'ExperimentAct'} component={ExperimentAct} />
         <Tab.Screen name={'ImReporterAct'} component={ImReporterAct} />
         <Tab.Screen name={'IllustrationAct'} component={IllustrationAct} />
+        <Tab.Screen name={'InvestigationAct'} component={InvestigationAct} />
       </Tab.Navigator>
     </SafeAreaProvider>
   );
