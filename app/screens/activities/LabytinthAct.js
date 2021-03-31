@@ -7,6 +7,8 @@ import { RadioButton } from 'react-native-paper';
 import MyListComponent from '../components/MyListComponent';
 
 const LabyrinthAct = () => {
+  //RADIO BUTTON
+  const [value, setValue] = useState('');
   //Datos Actividad
   const [activity] = useState({
     id: 9,
@@ -18,9 +20,9 @@ const LabyrinthAct = () => {
     instruction:
       'Seleccione la alternativa correcta.',
     options: [
-      { id: 1, label: 21 },
-      { id: 2, label: 37 },
-      { id: 3, label: 10 },
+      { id: 1, label: 'A. 21' },
+      { id: 2, label: 'B. 37' },
+      { id: 3, label: 'C. 10' },
     ]
   });
 
@@ -102,11 +104,11 @@ const styles = StyleSheet.create({
     textAlign: 'justify',
   },
   imageConceptContainer: {
-    margin: 10,
+    height: 300,
     borderRadius: 5,
   },
   imageConcept: {
-    height: 100,
+    height: '100%',
     width: '100%',
   },
   buttonStyle: {
