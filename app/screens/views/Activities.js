@@ -13,6 +13,7 @@ import QuizAct from '../activities/QuizAct';
 import ShortFilmAct from '../activities/ShortFilmAct';
 import SingConceptAct from '../activities/SingConceptAct';
 import StoryTellerAct from '../activities/StoryTellerAct';
+import ArtisticDanceAct from '../activities/ArtisticDanceAct';
 
 //Navegacion
 const Tab = createMaterialTopTabNavigator();
@@ -32,6 +33,7 @@ const Activities = () => {
         <Tab.Screen name={'ShortFilmAct'} component={ShortFilmAct} />
         <Tab.Screen name={'SingConceptAct'} component={SingConceptAct} />
         <Tab.Screen name={'StoryTellerAct'} component={StoryTellerAct} />
+        <Tab.Screen name={'ArtisticDanceAct'} component={ArtisticDanceAct} />
       </Tab.Navigator>
     </SafeAreaProvider>
   );
