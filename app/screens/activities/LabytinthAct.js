@@ -6,7 +6,7 @@ import { RadioButton } from 'react-native-paper';
 //Componentes
 import MyListComponent from '../components/MyListComponent';
 
-const PlantillaImgHorizontal = () => {
+const LabyrinthAct = () => {
   //Datos Actividad
   const [activity] = useState({
     id: 9,
@@ -114,4 +114,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PlantillaImgHorizontal;
+export default LabyrinthAct;
