@@ -14,7 +14,7 @@ const SingConceptAct = () => {
   const [activity] = useState({
     id: 13,
     title: 'A Cantar',
-    type: 'Link', //Falta agregar Audio
+    type: ['Link', 'Audio'],
     description:
       'Te invito a crear un video donde puedas expresar cantando el siguiente concepto:',
     concept: 'Amor',

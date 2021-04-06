@@ -14,7 +14,7 @@ const VolunteeringAct = () => {
   const [activity] = useState({
     id: 16,
     title: 'Voluntariado',
-    type: 'Image', //Falta agregar Video
+    type: ['Image', 'Video'],
     description:
       'Te invito a realizar una acción de voluntariado asociada al siguiente concepto:',
     concept: 'Reciclaje',

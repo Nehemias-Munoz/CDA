@@ -6,7 +6,7 @@ const HangmanAct = () => {
   const [activity] = useState({
     id: 1,
     title: 'Hangman',
-    type: 'Resource',
+    type: 'Automatic',
     description:
       'Encuentra el concepto relacionado con esta definición:',
     definition: 'Persona entendida en la instalación de los aparatos eléctricos.',

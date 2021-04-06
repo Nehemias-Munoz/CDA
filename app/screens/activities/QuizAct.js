@@ -15,7 +15,7 @@ const QuizAct = () => {
   const [activity] = useState({
     id: 10,
     title: 'Quiz',
-    type: 'Seleccion',
+    type: 'Automatic',
     description:
       'Responda la siguiente pregunta:',
     concept: '¿Que es un algoritmo?',

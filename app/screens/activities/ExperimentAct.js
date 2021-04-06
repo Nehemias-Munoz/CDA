@@ -14,7 +14,7 @@ const ExperimentAct = () => {
   const [activity] = useState({
     id: 5,
     title: 'Experimento',
-    type: 'Link', // Falta agregar Audio
+    type: ['Link', 'Audio'],
     description:
       'Realice un experimento, donde emplee medidas y realice pruebas para comprobar y estudiar el siguiente proceso:',
     concept: 'Fotosintesis',
