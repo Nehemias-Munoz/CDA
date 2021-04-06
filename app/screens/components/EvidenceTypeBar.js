@@ -1,26 +1,90 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Icon } from 'react-native-elements';
 const EvidenceTypeBar = ({ type, setTypeSubmit }) => {
-  const [iconos] = useState([
-    { id: 1, typeEvidence: 'Audio', name: 'microphone', type: 'material-community' },
-    { id: 2, typeEvidence: 'Link', name: 'video', type: 'material-community' },
-    { id: 3, typeEvidence: 'Document', name: 'format-text', type: 'material-community' },
-    { id: 4, typeEvidence: 'Image', name: 'image-multiple', type: 'material-community' },
-  ]);
 
+  const tipos = type;
+  const [microphone, setMicrophone] = useState(false);
+  const [video, setVideo] = useState(false);
+  const [image, setImage] = useState(false);
+  const [document, setDocument] = useState(false);
+  useEffect(() => {
+    const comprobarIconoAudio = () => {
+      if (tipos.includes('Audio') === true) {
+        setMicrophone(true);
+        return;
+      }
+    };
+    const comprobarIconoVideo = () => {
+      if (tipos.includes('Link') === true) {
+        setVideo(true);
+        return;
+      }
+    };
+    const comprobarIconoTexto = () => {
+      if (tipos.includes('Document') === true) {
+        setDocument(true);
+        return;
+      }
+    };
+    const comprobarIconoImagen = () => {
+      if (tipos.includes('Image') === true) {
+        setImage(true);
+        return;
+      }
+    }
+    comprobarIconoAudio();
+    comprobarIconoVideo();
+    comprobarIconoTexto();
+    comprobarIconoImagen();
+  }, [tipos]);
   return (
     <View style={styles.container}>
-      {iconos.map(x => (
+      {microphone
+        ?
         <Icon
-          key={x.id}
           size={20}
           raised={true}
-          type={x.type}
-          name={x.name}
-          onPress={() => setTypeSubmit(x.typeEvidence)}
+          type={'material-community'}
+          name={'microphone'}
+          onPress={() => setTypeSubmit('Audio')}
         />
-      ))}
+        :
+        null}
+      {video
+        ?
+        <Icon
+          size={20}
+          raised={true}
+          type={'material-community'}
+          name={'video'}
+          onPress={() => setTypeSubmit('Link')}
+        />
+        :
+        null
+      }
+      {document
+        ?
+        <Icon
+          size={20}
+          raised={true}
+          type={'material-community'}
+          name={'format-text'}
+          onPress={() => setTypeSubmit('Document')}
+        />
+        :
+        null}
+      {image
+        ?
+        <Icon
+          size={20}
+          raised={true}
+          type={'material-community'}
+          name={'image-multiple'}
+          onPress={() => setTypeSubmit('Image')}
+        />
+        :
+        null}
     </View>
   );
 };
