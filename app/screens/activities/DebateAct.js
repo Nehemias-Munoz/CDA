@@ -14,7 +14,7 @@ const DebateAct = () => {
   const [activity] = useState({
     id: 4,
     title: 'Debate',
-    type: 'Link',
+    type: ['Link', 'Audio'],
     description:
       'Te invito a compartir tu opinión, de acuerdo siguiente tema o problema determinado:',
     concept: 'Diversidad',

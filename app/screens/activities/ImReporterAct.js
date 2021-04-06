@@ -14,7 +14,7 @@ const ImReporterAct = () => {
   const [activity] = useState({
     id: 6,
     title: 'A Entrevistar',
-    type: 'Link', //Falta agregar Audio
+    type: ['Link', 'Audio'],
     description:
       'Realice un trabajo periodístico asociado al siguiente tema:',
     concept: 'Cambio Climatico',

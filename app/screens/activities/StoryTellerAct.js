@@ -14,7 +14,7 @@ const StoryTellerAct = () => {
   const [activity] = useState({
     id: 14,
     title: 'Crea un Cuento',
-    type: 'Link', //Falta agregar recursos y audio
+    type: ['Link', 'Document', 'Audio'],
     description:
       'Te invito a crear un cuento asociada al siguiente concepto:',
     concept: 'Mitologia',
