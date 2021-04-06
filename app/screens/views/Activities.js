@@ -15,6 +15,7 @@ import SingConceptAct from '../activities/SingConceptAct';
 import StoryTellerAct from '../activities/StoryTellerAct';
 import ArtisticDanceAct from '../activities/ArtisticDanceAct';
 import VolunteeringAct from '../activities/VolunteeringAct';
+import HangmanAct from '../activities/HangmanAct';
 
 //Navegacion
 const Tab = createMaterialTopTabNavigator();
@@ -36,6 +37,7 @@ const Activities = () => {
         <Tab.Screen name={'StoryTellerAct'} component={StoryTellerAct} />
         <Tab.Screen name={'ArtisticDanceAct'} component={ArtisticDanceAct} />
         <Tab.Screen name={'VolunteeringAct'} component={VolunteeringAct} />
+        <Tab.Screen name={'HangmanAct'} component={HangmanAct} />
       </Tab.Navigator>
     </SafeAreaProvider>
   );
