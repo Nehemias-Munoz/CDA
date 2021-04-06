@@ -4,6 +4,7 @@ import { Card, Button } from 'react-native-elements';
 import { RadioButton } from 'react-native-paper';
 
 //Componentes
+import EvidenceTypeBar from '../components/EvidenceTypeBar';
 import MyListComponent from '../components/MyListComponent';
 
 const LabyrinthAct = () => {
@@ -33,6 +34,7 @@ const LabyrinthAct = () => {
           <Card>
             <ScrollView showsVerticalScrollIndicator={false}>
               <Card.Title style={styles.title}>{activity.title}</Card.Title>
+              <EvidenceTypeBar type={activity.type} />
               <Card.Image
                 style={styles.imageStyle}
                 PlaceholderContent={<ActivityIndicator />}

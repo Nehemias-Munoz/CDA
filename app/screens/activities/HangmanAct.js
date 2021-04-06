@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ScrollView, StyleSheet, ActivityIndicator, Text, View } from 'react-native';
 import { Button, Card, Rating } from 'react-native-elements';
+//Componentes
+import EvidenceTypeBar from '../components/EvidenceTypeBar';
 
 const HangmanAct = () => {
   const [activity] = useState({
@@ -68,6 +70,7 @@ const HangmanAct = () => {
           <Card>
             <ScrollView>
               <Card.Title style={styles.title}>{activity.title}</Card.Title>
+              <EvidenceTypeBar type={activity.type} />
               <Card.Image
                 style={styles.imageStyle}
                 PlaceholderContent={<ActivityIndicator />}

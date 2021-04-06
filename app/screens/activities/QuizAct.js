@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { TextInput, ScrollView, StyleSheet, Text, View, ActivityIndicator, Alert, Modal, Pressable, } from 'react-native';
 import { Icon, Card, Button, CheckBox } from 'react-native-elements';
 //Componentes
+import EvidenceTypeBar from '../components/EvidenceTypeBar';
 import MyListComponent from '../components/MyListComponent';
 
 const QuizAct = () => {
@@ -52,6 +53,7 @@ const QuizAct = () => {
       <Card>
         <ScrollView showsVerticalScrollIndicator={false}>
           <Card.Title style={styles.title}>{activity.title}</Card.Title>
+          <EvidenceTypeBar type={activity.type} />
           <Card.Image
             style={styles.imageStyle}
             source={require('../../../assets/images/activities/quiz.jpg')}

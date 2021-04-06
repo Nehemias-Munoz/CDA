@@ -8,6 +8,7 @@ const EvidenceTypeBar = ({ type, setTypeSubmit }) => {
   const [video, setVideo] = useState(false);
   const [image, setImage] = useState(false);
   const [document, setDocument] = useState(false);
+  const [automatic, setAutomatic] = useState(false);
   useEffect(() => {
     const comprobarIconoAudio = () => {
       if (tipos.includes('Audio') === true) {
@@ -33,10 +34,17 @@ const EvidenceTypeBar = ({ type, setTypeSubmit }) => {
         return;
       }
     }
+    const comprobarIconoAutomatico = () => {
+      if (tipos.includes('Automatic') === true) {
+        setAutomatic(true);
+        return;
+      }
+    }
     comprobarIconoAudio();
     comprobarIconoVideo();
     comprobarIconoTexto();
     comprobarIconoImagen();
+    comprobarIconoAutomatico();
   }, [tipos]);
   return (
     <View style={styles.container}>
@@ -85,6 +93,16 @@ const EvidenceTypeBar = ({ type, setTypeSubmit }) => {
         />
         :
         null}
+      {automatic
+        ?
+        <Icon
+          size={20}
+          raised={true}
+          type={'material-community'}
+          name={'robot'}
+        />
+        :
+        null}
     </View>
   );
 };
@@ -94,7 +112,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     width: '100%',
-    marginBottom: 5,
   },
 });
 export default EvidenceTypeBar;
